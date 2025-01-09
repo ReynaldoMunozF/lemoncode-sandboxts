@@ -9,28 +9,19 @@
   </head>
   <body>
     <div class="container">
-      <div class="logo">
-        <img src="asset/logo-clinica.png" alt="Logo" />
+      <div class="score" id="score">PUNTUACIÓN:
       </div>
-      <div class="display">
-      <input class="numero-turno" id="turn" value="00" readonly></input>
-      <br>
-      <p class="texto-turno">PASE A LA CONSULTA</p>
-    </div>
-      <BR></BR>
-      <div class="buttons">
-        <button id="prevTurn">ANTERIOR</button>
-        <BR></BR>
-      <button id="nextTurn">SIGUIENTE</button>
-      <BR></BR>
-    
-    </div>
-    <div class="control">
-      <button id="reset">RESET</button>
-      <label for="changeturn"></label>
-      <input class="numero-turno" id="changeturn" value="00"></input>
-      <button id="change">CAMBIAR TURNO</button>
-    </div>
+      <div class="cardContainer">
+        <!-- <div class="card" id="card"></div> -->
+        <img src="https://raw.githubusercontent.com/Lemoncode/fotos-ejemplos/main/cartas/back.jpg" alt="card" >
+        <button id="newCard">CARTA</button>
+      </div>
+      <img  class="imgplayer" src="" alt="" id="cardPlayer">
+      <button id="buttonPlanted">ME PLANTO</button>
+      <div class="result" id="gameOver"></div>
+      <div class="result" id="planted"></div>
+<BR></BR>
+      <button id="newGame">NUEVO JUEGO</button>
     </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
