@@ -236,7 +236,7 @@
 type Especialidad = "Medico de familia" | "Pediatra" | "Cardiólogo";
 
 interface Pacientes {
-  
+
   id: number;
   nombre: string;
   apellidos: string;
@@ -358,7 +358,7 @@ const reasignaPacientesAMedicoFamilia = (pacientes: Pacientes[]): Pacientes[] =>
 };
 
 //  Comprobar si hay pacientes en Pediatría
-const HayPacientesDePediatria = (pacientes: Pacientes[]): boolean => {
+const hayPacientesDePediatria = (pacientes: Pacientes[]): boolean => {
   for (let i = 0; i < pacientes.length; i++) {
     if (pacientes[i].especialidad === "Pediatra") {
       return true;
