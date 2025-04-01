@@ -31,4 +31,33 @@
 //             carta.src = carta.dataset.atras || "assets/reverso.png";
 //         });
 //     }
-// });
+// });import { obtenerCartas } from "./imagenes";
+
+const obtenerCartas: string[] = [
+    "https://raw.githubusercontent.com/Lemoncode/fotos-ejemplos/refs/heads/main/memo/1.png",
+    "https://raw.githubusercontent.com/Lemoncode/fotos-ejemplos/refs/heads/main/memo/1.png"
+];
+
+document.addEventListener("DOMContentLoaded", () => {
+    const cartas = document.querySelectorAll(".imagen") as NodeListOf<HTMLImageElement>;
+    let cartasVolteadas: HTMLImageElement[] = [];
+
+
+    cartas.forEach((carta, index) => {
+        carta.dataset.frente = obtenerCartas[index]; 
+        
+    });
+
+    cartas.forEach(carta => {
+        carta.addEventListener("click", () => {
+            if (cartasVolteadas.length < 2 && !cartasVolteadas.includes(carta)) {
+                carta.src = carta.dataset.frente || carta.src;  
+                cartasVolteadas.push(carta);
+            }
+
+           
+        });
+    });
+});
+
+
