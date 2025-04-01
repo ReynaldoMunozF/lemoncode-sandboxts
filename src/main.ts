@@ -107,7 +107,6 @@ document.addEventListener("DOMContentLoaded", () => {
       const indice = parseInt(cartaDiv.getAttribute("data-indice-id")!);
       const imagenCarta = cartaDiv.querySelector("img") as HTMLImageElement;
 
-      // Cambiar la imagen según el índice
       imagenCarta.src = cartas[indice].imagen;
     });
   });

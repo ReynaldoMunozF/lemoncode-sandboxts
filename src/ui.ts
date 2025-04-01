@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     if (esPartidaCompleta(tablero)) {
-      mensajeGanaste.style.display = "block"; //
+      mensajeGanaste.style.display = "block"; 
     }
   };
 });
