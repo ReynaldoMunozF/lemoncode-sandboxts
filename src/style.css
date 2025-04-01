@@ -1,0 +1,10 @@
+.carta-container {
+  display: flex;
+  height: 100vh;
+}
+
+#carta {
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+}
