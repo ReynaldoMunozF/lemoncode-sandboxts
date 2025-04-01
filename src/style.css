@@ -1,4 +1,4 @@
-.carta-container {
+/* .carta-container {
   display: flex;
   height: 100vh;
 }
@@ -7,4 +7,26 @@
   width: 200px;
   height: 200px;
   cursor: pointer;
+} */
+ /* Estilos generales */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 150px); 
+  grid-template-rows: repeat(3, 150px);
+  gap: 10px; 
+}
+
+.carta {
+  width: 150px;
+  height: 150px;
+  background-color: #10bc66; 
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }

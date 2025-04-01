@@ -22,13 +22,13 @@
 // console.log(cartasBarajadas);
 
 
-document.addEventListener("DOMContentLoaded", () => {
-    const carta = document.getElementById("carta") as HTMLImageElement;
+// document.addEventListener("DOMContentLoaded", () => {
+//     const carta = document.getElementById("carta") as HTMLImageElement;
     
-    if (carta) {
-        carta.addEventListener("click", () => {
-            // Cambiar la imagen al hacer clic
-            carta.src = carta.dataset.atras || "assets/reverso.png";
-        });
-    }
-});
+//     if (carta) {
+//         carta.addEventListener("click", () => {
+//             // Cambiar la imagen al hacer clic
+//             carta.src = carta.dataset.atras || "assets/reverso.png";
+//         });
+//     }
+// });
