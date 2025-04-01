@@ -7,25 +7,11 @@
     <link rel="stylesheet" href="/src/style.css">
 </head>
 <body>
-
-    <!-- <div class="carta-container">
-        <img id="carta" src="/asset/reverso.png" data-atras="https://raw.githubusercontent.com/Lemoncode/fotos-ejemplos/refs/heads/main/memo/1.png" alt="Carta">
-    </div> -->
-    <!-- <div class="grid-container">
-      <div class="carta"></div>
-      <div class="carta"></div>
-      <div class="carta"></div>
-      <div class="carta"></div>
-      <div class="carta"></div>
-      <div class="carta"></div>
-      <div class="carta"></div>
-      <div class="carta"></div>
-      <div class="carta"></div>
-      <div class="carta"></div>
-      <div class="carta"></div>
-      <div class="carta"></div>
-  </div> -->
-  <div id="contenedor-cartas"></div>
-    <script src="/src/main.ts"></script>
+<div id="contenedor-cartas"></div>
+  <button id="iniciar-partida">Iniciar partida</button>
+    <script type="module" src="/src/ui.ts"></script>
+    <div id="mensaje-ganaste" style="display: none;">
+      ¡Felicidades! Has ganado la partida.
+    </div>
 </body>
 </html>

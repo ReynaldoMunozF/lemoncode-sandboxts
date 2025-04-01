@@ -55,14 +55,14 @@
 } */
 .carta {
   display: inline-block;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   margin: 10px;
   border: 1px solid #000;
   text-align: center;
   cursor: pointer;
 }
-.imagen-carta {
+.carta img {
   width: 100%;
   height: 100%;
 }
